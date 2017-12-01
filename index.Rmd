@@ -45,6 +45,21 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
 
 
 
+## NYC Flight exploration
+
+```{r}
+library(tidyverse)
+library(nycflights13) ## install.packages("nycflights13")
+
+flights
+
+
+##date on Jan 1st
+
+flights %>% 
+  filter(month==1,
+         day==1)
+```
 
 
 
