@@ -29,4 +29,22 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
+
 ## Changing something HERE!!!
+
+
+## PLOT iris
+
+```{r plot}
+data(iris)
+require(ggplot2)
+names(iris)
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) + 
+  geom_point()
+```
+
+
+
+
+
+
